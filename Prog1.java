@@ -7,7 +7,7 @@ public class Prog1 {
       System.out.println("a is greater");
     }
     else{
-      System.out.println("b is greater");
+      System.out.println("b is greater324");
     }
     
 
