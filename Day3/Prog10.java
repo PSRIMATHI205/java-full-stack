@@ -6,20 +6,23 @@ public class Prog10 {
         boolean isFound=false;
         int k=8;
         int low=0,high =a.length-1;
+        int mid=low+(high-low)/2;
         while(low<=high){
-            int mid=low+(high-low/2);
+            
             if(a[mid]==k){
                 isFound=true;
+                break;
             }
             else if(a[mid]<k){
                 low=mid+1;
             }
+
             else{
                 high=mid-1;
             }
         }
         if(isFound){
-            System.out.println("Search element is found");
+            System.out.println(mid);
         }
 
     }
