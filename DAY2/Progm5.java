@@ -1,16 +1,28 @@
-public class Progm5{
+import java.util.Arrays;
+public class ArrayDemo {
     public static void main(String[] args) {
-        for(int i=0;i<7;i++){
-            for(int j=0;j<5;j++){
-                if(j==0 || i==0&&j!=4||i==3&&j!=3||i==6&&j!=4||i==1&&j==4||i==2&&j==4||i==4&&j==4||i==5&&j==4){
-                    System.out.print("*  ");
-                }
-                else{
-                    System.out.print("  ");
-                }
-               
-            }
-             System.out.println();
+        int[] arr = { 2, 4, 6, 8, 10 };
+        int len = arr.length;
+        // System.out.println(arr[0]);
+        // System.out.println(arr[1]);
+        // System.out.println(arr[2]);
+        // System.out.println(arr[3]);
+
+        for (int i = 0; i < len; i++) {
+            System.out.println(arr[i]);
         }
+        for(int i=len-1;i>=0;i--)
+        {
+            System.out.println(arr[i]);
+        }
+
+        //foreach loop
+        for(int value:arr){
+            System.out.println(value);
+        }
+
+        System.out.println(arr);//[I@2f92e0f4
+
+        System.out.println(Arrays.toString(arr));
     }
 }
